@@ -41,10 +41,11 @@ a {
 header {
   background-color: var(--main-light-color);
   margin: 0 auto;
-  display: flex;
-  width: 1600px;
-  min-height: 80px;
-  
+  display: flex;  
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 215px;
+  padding-right: 215px;
 }
 .header .container {
   display: flex;
@@ -84,8 +85,6 @@ header {
 .link-portfolio:visited {
   color: var(--blue-color);
 }
-
-
 a.webstudio-logo-header {
   font-family: Raleway;
   font-style: normal;
@@ -96,25 +95,28 @@ a.webstudio-logo-header {
   color: var(--blue-color);
   margin-right: 93px;
 }
-
 .webstudio-black {
     color: var(--total-black);
 }
-
 .list-studio-contacts a {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--gray-color);
 }
+
 /* top */
 .studio-top {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   background-color: var(--bg-dark-color);
-  margin: 0 auto;
-  width: 1600px;
-  min-height: 600px;
-  
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-right: 452px;
+  padding-left: 452px;
+  }
+  .studio-top .container {
+    margin: 0 auto;
   }
 
 .top-name {
@@ -129,12 +131,12 @@ a.webstudio-logo-header {
   min-height: 120px; 
   margin: 0 auto;
   padding-bottom: 30px;
-  padding-top: 200px;
+
 }
 .top-btn {
   display: flex;
   margin: 0 auto;
-  padding-bottom: 200px;
+  
 }
 .top-button {
   font-weight: bold;
@@ -153,6 +155,7 @@ a.webstudio-logo-header {
   margin: 0 auto;
   display: flex;
 }
+
 /* main info */
 .container .main-info {
   display: flex;
@@ -173,6 +176,8 @@ a.webstudio-logo-header {
   color: var(--main-dark-color);
   width: 270px;
   min-height: 16px; 
+  margin: 0;
+  padding-bottom: 10px;
 }
 .main-info-text {
   font-weight: normal;
@@ -181,6 +186,7 @@ a.webstudio-logo-header {
   color: var(--gray-color);
   width: 270px;
   min-height: 75px;
+  margin: 0;
 }
 
 /* activities */
@@ -192,33 +198,33 @@ a.webstudio-logo-header {
   justify-content: space-between;
 }
 .headline-activities {
-  margin-bottom: 50px;
+  margin-bottom: 0;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-dark-color);
+  padding-bottom: 50px;
 }
 
 /* team */
 .team {
   display: flex;
   margin: 0 auto;
-  width: 1600px;
   min-height: 648px;
   background-color: var(--bg-light-color);
- 
 }
 .headline-team {
+  margin: 0;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-dark-color);
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px; 
 }
 .team ul {
   display: flex;
@@ -232,29 +238,36 @@ ul.team-list {
 }
 
 ul.team-list h3 {
+  margin: 0;
   color: var(--main-dark-color);
+  padding-top: 30px;
 }
 ul.team-list p {
+  margin: 0;
   font-weight: normal;
   color: var(--gray-color);
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 /* footer */
 .footer {
 display: flex;
 flex-direction: column;
-width: 1600px;
-min-height: 252px;
 background-color: var(--bg-dark-color);
 margin: 0 auto;
+padding-top: 60px;
+padding-bottom: 60px;
+padding-left: 215px;
 }
-.add {
-  margin-bottom: 60px;
-}
+
 .logo {
-  margin-top: 60px;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
+.footer-list li:not(:last-child){
+  padding-bottom: 9px;  
+}
+.main-info li:not(:last-child)
 
 .footer a:hover,
 .footer a:active,
@@ -285,6 +298,7 @@ margin: 0 auto;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--main-light-color);
+    padding-bottom: 9px;
   }
   .webstudio-white {
     color: var(--main-light-color);
@@ -311,9 +325,9 @@ margin: 0 auto;
 
 .btn-portfolio ul {
   display: flex;
-  align-items: center;
   margin: 0 auto;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .btn-portfolio li {
   padding-right: 8px;
@@ -360,7 +374,7 @@ margin: 0 auto;
  /* menu */
  .menu-portfolio {
    display: flex;
-   align-items: flex-start;
+   align-items: center;
    margin: 0 auto;
    margin-top: 34px;
    margin-bottom: 89px;
@@ -380,12 +394,17 @@ margin: 0 auto;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-dark-color);
+    margin: 0;
+    padding-top: 20px;
  }
  .menu-list-portfolio p {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--gray-color);
+    margin: 0;
+    padding-top: 4px;
+    padding-bottom: 20px;
  }
 
  /*=== /PAGE for PORTFOLIO ===*/
